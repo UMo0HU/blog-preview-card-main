@@ -1,0 +1,105 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: "Figtree", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Yellow);
+    color: var(--Black)
+}
+
+.outer-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-container {
+    background-color: var(--White);
+    width: 320px;
+    height: 420px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1.5px solid var(--Black);
+    box-shadow: 6px 6px var(--Black);
+}
+
+.inner-container img {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+img + p {
+    background-color: var(--Yellow);
+    padding: 5px 7.5px;
+    width: fit-content;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 0 0 10px;
+}
+
+.inner-container p:nth-child(3) {
+    font-weight: 600;
+    font-size: 12px;
+    margin: 3px 0 13px;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+h3 + p {
+    color: var(--Grey);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.2rem;
+    padding: 10px 0;
+}
+
+.inner-container p:last-child::before {
+    background-image: url(assets/images/image-avatar.webp);
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+}
+
+.inner-container p:last-child {
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.attribution { 
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
