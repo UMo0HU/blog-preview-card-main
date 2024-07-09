@@ -71,6 +71,11 @@ h3 {
     font-weight: 900;
 }
 
+h3:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
 h3 + p {
     color: var(--Grey);
     font-weight: 400;
